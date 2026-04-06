@@ -19,29 +19,42 @@
             <tr>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align:center;">Daniel Frey</p>
-                <p style="text-align:center;">
-                    PhD candidate at Technical University of Munich (TUM)</a>, affiliated with the <a href="https://www.ph.nat.tum.de/en/e17/people/daniel-frey/">Chair of Biomedical Physics</a> and the <a href="https://www.bioengineering.tum.de/">Munich Institute of Biomedical Engineering</a>, in close collaboration with the <a href="https://kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine">Chair for AI in Healthcare and Medicine</a>. 
+                <br>
+                <p style="text-align:justify;">
+                    PhD candidate at Technical University of Munich (TUM)</a>, affiliated with the <a href="https://www.ph.nat.tum.de/en/e17/people/daniel-frey/">Chair of Biomedical Physics</a> and the <a href="https://www.bioengineering.tum.de/">Munich Institute of Biomedical Engineering</a>, in close collaboration with the <a href="https://kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine">Chair of AI in Healthcare and Medicine</a>. 
                 </p>
                 
-                <p style="text-align:center;font-style:italic;">Dark-Field CT &nbsp · &nbsp Machine Learning</p>
+                <p style="text-align:center;font-style:italic;">Research</p>
                 
                 <p style="text-align:justify;">
-                    My research focuses on developing techniques to advance the clinical translation of <a href="https://doi.org/10.1073/pnas.2118799119">human-scale dark-field computed tomography</a>, in particular on streak artifact reduction and image quality enhancement using representation learning.
-                Ultimately, my work aims at closing the gap between physics-based domain knowledge and modern machine learning for clinical applications. 
+                    My research focuses on advancing the clinical translation of <a href="https://doi.org/10.1073/pnas.2118799119">human-scale dark-field computed tomography</a> (DFCT), an X-ray modality based on small-angle scattering with strong potential for pulmonary imaging. 
+                    I develop methods for DFCT streak artifact reduction and image quality enhancement using (self)-supervised techniques and learned representations, aiming to bridge physics-based domain knowledge with modern machine learning. 
                 </p>
                 
+                <div id="md-content"></div>
+                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script>
+                fetch("publications.md")
+                  .then(res => res.text())
+                  .then(text => {
+                    document.getElementById("md-content").innerHTML = marked.parse(text);
+                  });
+                </script>
+                
+                <p style="text-align:center;font-style:italic;">Background</p>
+                                
                 <p style="text-align:justify;">
-I began my academic journey with a Bachelor's degree in Biochemistry at TUM, followed by a second Bachelor's degree in Physics at the same university, where I was first introduced to X-ray dark-field CT. For my Master's degree, I joined the Biomedical Engineering and Medical Physics (BEMP) program at TUM, culminating in a thesis conducted at the human-scale prototype. In parallel to my studies, I collected practical know-how while working at the TÜV SÜD electrical safety department, and deepened my knowledge on data preparation and deep learning flows in neuroimaging as part of the <a href="https://neurologie.mri.tum.de/de/forschung/morphometrie">Morphometry Group</a> at TUM University Hospital.
+I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was first introduced to dark-field imaging. I went on to complete the Biomedical Engineering and Medical Physics (BEMP) Master's program, which I finished with a thesis on the human-scale DFCT prototype. Alongside my studies, I gained practical engineering experience at the TÜV SÜD electrical safety department, and developed expertise in deep learning workflows for neuroimaging as part of the <a href="https://neurologie.mri.tum.de/de/forschung/morphometrie">Morphometry Group</a> at TUM University Hospital.
 </p>
                 
               </td>
               
-              <td style="padding:2.5%;width:37%;max-width:37%">
+              <td style="padding:5%;width:35%;max-width:37%">
                 <a href="images/profile_photo.png"><img src="images/profile_photo.png" alt="Profile photo" style="width:100%;max-width:100%;object-fit:cover;border-radius:50%" class="hoverZoomLink"></a>
                 <figcaption style="margin-top:8px; text-align:center; font-size:0.9em; color:#555;">
                   <p style="text-align:center;">
-                  <p style="text-align:center; font-weight:bold;">
-                  <a href="mailto:daniel.frey@tum.de" style="color:orange;">E-mail</a> &nbsp;|&nbsp;
+                  <p style="text-align:center; font-weight:normal;">
+                  <a href="mailto:daniel.frey@tum.de" style="color:orange;font-weight:bold">E-mail</a> &nbsp;|&nbsp;
                   <a href="https://github.com/dcfrey">GitHub</a>
                 </p>
                   </p>
@@ -51,125 +64,102 @@ I began my academic journey with a Bachelor's degree in Biochemistry at TUM, fol
           </tbody>
         </table>
 
+<!--<hr style="border: none; height: 1px; background-color: #A3A3A3; width: 97%; margin: 3px auto;">-->
+
         <table style="width:100%;border:0;border-spacing:0;margin:auto;">
           <tbody>
             <tr>
-            <hr style="border: none; height: 2px; background-color: #D3D3D3; width: 90%; margin: 20px auto;">
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h3>CONFERENCE ABSTRACTS & PRESENTATIONS</h3>
                      <ul>
                         <li>
-                            <strong>MultipleMS Spinal Cord MRI</strong> [Oral]
+                            <strong>MultipleMS Spinal Cord MRI</strong> [Oral Presentation]
                             <br>
                             <em>ECTRIMS 2024</em>, Copenhagen, DK
-                             · <a href="https://ectrims.eu/ectrims2024/">Conference</a>
-                             · <a href="assets/ECTRIMS2024_MMS.pdf">Slides</a>
+                             &nbsp·&nbsp <a href="https://ectrims.eu/ectrims2024/">Conference</a>
+                             &nbsp·&nbsp <a href="assets/ECTRIMS2024_MMS.pdf">Slides</a>
                              <br>
-                            <small>Status update on MultipleMS processing for longitudinal multi-center spinal cord lesion analysis in multiple sclerosis.</small>
+                             <small>
+                            <a href="https://dcfrey.github.io" style="font-size:inherit;">D. Frey</a>, <a href="https://jqmcginnis.github.io/" style="font-size:inherit">J. McGinnis</a>, M. Mühlau
+                            </small>
                             <br>
+                            <small style="display:block; margin-top:0px;color:#444">Status update on MultipleMS, a multi-center longitudinal cohort study for the analysis of spinal cord lesions in MS.</small>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <strong>Robust Sparse-view Dark-field CT with 3D Gaussian Splatting</strong> [Poster]
+                            <strong>Robust Sparse-view Dark-field CT with 3D Gaussian Splatting</strong> [Poster Presentation]
                             <br>
                             <em>IEEE ISBI 2026</em>, London, UK
-                             · <a href="https://biomedicalimaging.org/2026/">Conference</a>
-                             · <a href="assets/IEEE_ISBI2026_DFCT_Robust3DGS.pdf">Abstract</a>
-                             · <a href="">Poster (soon)</a>
+                             &nbsp·&nbsp <a href="https://biomedicalimaging.org/2026/">Conference</a>
+                             &nbsp·&nbsp <a href="assets/IEEE_ISBI2026_DFCT_Robust3DGS.pdf">Abstract</a>
+                             &nbsp·&nbsp <a href="assets/IEEE_ISBI2026_DFCT_Robust3DGS_Poster.pdf">Poster</a>
                              <br>
-                            <small>Demonstrates that 3D Gaussian splatting enables streak-reduced dark-field CT reconstruction compared to FDK, especially in sparse-view conditions.</small>
+                             <small>
+                            <a href="https://dcfrey.github.io" style="font-size:inherit;">D. Frey</a>*, <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" style="font-size:inherit;">T. Dorosti</a>*, J. McGinnis, T. Hiu, F. I. Ozlugedik, J. B. Thalhammer, S. Peterhansl, D. Rueckert, F. Pfeiffer, F. Schaff
+                            </small>
                             <br>
+                            <small style="display:block; margin-top:0px;color:#444">Demonstrates that 3D Gaussian splatting enables enhanced tomographic reconstruction in dark-field imaging compared to FDK.</small>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <strong>Streak-reduced Human-scale Dark-field CT with 3D Gaussian Splatting</strong> [Poster by <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en">Tina Dorosti</a>]
+                            <strong>Streak-reduced Human-scale Dark-field CT with 3D Gaussian Splatting</strong> [Poster Presentation by T. Dorosti]
                             <br>
                             <em>IEEE ISBI 2026</em>, London, UK
-                             · <a href="https://biomedicalimaging.org/2026/">Conference</a>
-                             · <a href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS.pdf">Abstract</a>
-                             · <a href="">Poster (soon)</a>
+                             &nbsp·&nbsp <a href="https://biomedicalimaging.org/2026/">Conference</a>
+                             &nbsp·&nbsp <a href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS.pdf">Abstract</a>
+                             &nbsp·&nbsp <a href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS_Poster_TD.pdf">Poster</a>
                             <br>
-                            <small>Repurposes 3D Gaussian splatting for post-processing dark-field CT, achieving superior streak reduction compared to conventional filters while preserving edge sharpness and high CNR.</small>
+                            <small>
+                            <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" style="font-size:inherit;">T. Dorosti</a>*, <a href="https://dcfrey.github.io" style="font-size:inherit;">D. Frey</a>*, J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
+                            </small>
                             <br>
+                            <small style="display:block; margin-top:0px;color:#444">Repurposes 3D Gaussian splatting as streak artifact filter by post-processing reconstructed dark-field CT volumes.</small>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <strong>X-ray Dark-field CT Radiomics for Lung Phantom Assessment</strong> [Poster by <a href="https://de.linkedin.com/in/sofia-demianova-2516a3209">Sofia Demianova</a>]
+                            <strong>X-ray Dark-field CT Radiomics for Lung Phantom Assessment</strong> [Poster Presentation by S. Demianova]
                             <br><em>IEEE ISBI 2026</em>, London, UK
-                             · <a href="https://biomedicalimaging.org/2026/">Conference</a>
-                             · <a href="assets/IEEE_ISBI2026_DFCT_Radiomics.pdf">Abstract</a>
-                             · <a href="">Poster (soon)</a>
+                             &nbsp·&nbsp <a href="https://biomedicalimaging.org/2026/">Conference</a>
+                             &nbsp·&nbsp <a href="assets/IEEE_ISBI2026_DFCT_Radiomics.pdf">Abstract</a>
+                             &nbsp·&nbsp <a href="assets/IEEE_ISBI2026_DFCT_Radiomics_Poster_SD.pdf">Poster</a>
                             <br>
-                            <small>Proposes a methodology providing improved phantom material characterization based on radiomic texture features in attenuation and dark-field CT to replicate lung tissue structure.</small>
+                            <small>
+                            <a href="https://de.linkedin.com/in/sofia-demianova-2516a3209" style="font-size:inherit;">S. Demianova</a>*, <a href="https://dcfrey.github.io" style="font-size:inherit;">D. Frey</a>*, P. Bleuel, J. F. Hilmer, L. Kayser, D. Pfeiffer, T. Koehler, F. Pfeiffer
+                            </small>
                             <br>
+                            <small style="display:block; margin-top:0px;color:#444">Proposes a lung phantom assessment methodology leveraging dark-field CT texture features via radiomic analysis.</small>
                         </li>
                     </ul>
-                    
+                    <p style="text-align:right; margin:0;">
+                      <small><em>* Equal contribution</em></small>
+                    </p>
               </td>
             </tr>
           </tbody>
         </table>
 
-        <table style="width:100%;border:0;border-spacing:0;margin:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h3>PUBLICATIONS</h3>
-                    <p>Soon...</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+<!--<hr style="border: none; height: 1px; background-color: #A3A3A3; width: 97%; margin: 3px auto;">-->
 
-<!--        <table style="width:100%;border:0;border-spacing:0 10px;margin:auto;">-->
+<!--        <table style="width:100%;border:0;border-spacing:0;margin:auto;">-->
 <!--          <tbody>-->
-<!--            <!-- Example Publication Row -->
-<!--            <tr onmouseover="pub1_start()" onmouseout="pub1_stop()" bgcolor="#ffffd0">-->
-<!--              <td style="padding:16px;width:20%;vertical-align:middle">-->
-<!--                <div class="one">-->
-<!--                  <div class="two" id='pub1_image'>-->
-<!--                    <img src='images/darkfield_ct.png' width=100%>-->
-<!--                  </div>-->
-<!--                  <img src='images/darkfield_ct.png' width=100%>-->
-<!--                </div>-->
-<!--                <script>-->
-<!--                  function pub1_start() { document.getElementById('pub1_image').style.opacity = "1"; }-->
-<!--                  function pub1_stop() { document.getElementById('pub1_image').style.opacity = "0"; }-->
-<!--                  pub1_stop();-->
-<!--                </script>-->
-<!--              </td>-->
-<!--              <td style="padding:8px;width:80%;vertical-align:middle">-->
-<!--                <a href="#"><span class="papertitle">Machine Learning-Enhanced Dark-Field CT Reconstruction</span></a><br>-->
-<!--                <strong>Daniel Frey</strong><br>-->
-<!--                <em>IEEE Trans. Med. Imaging, 2025</em><br>-->
-<!--                <a href="https://github.com/dcfrey/darkfield-ml">Code</a> /-->
-<!--                <a href="#">Paper</a>-->
-<!--                <p>Development of machine learning algorithms to improve resolution and reduce noise in X-ray dark-field CT scans.</p>-->
+<!--            <tr>-->
+<!--              <td style="padding:16px;width:100%;vertical-align:middle">-->
+<!--                <h3>PUBLICATIONS</h3>-->
+<!--                    <p>...</p>-->
 <!--              </td>-->
 <!--            </tr>-->
-
 <!--          </tbody>-->
 <!--        </table>-->
 
-<!--        <h2>Academic Workshops</h2>-->
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">-->
-<!--          <td width="15%"><img src="images/workshop.png" alt="Workshop" width="80" height="80"></td>-->
-<!--          <td width="85%" valign="top">-->
-<!--            <p>-->
-<!--              <a href="#"><span class="papertitle">Dark-Field CT & Machine Learning Workshop, MICCAI 2025</span></a><br>-->
-<!--              <strong>Daniel Frey</strong> and collaborators.-->
-<!--            </p>-->
-<!--          </td>-->
-<!--        </table>-->
-
         <table style="width:100%;border:0;border-spacing:0;margin:auto;">
           <tbody>
             <tr>
-              <td style="padding:0">
-                <p style="text-align:right;font-size:small;">&copy; 2026 Daniel Frey | Based on <a href="https://github.com/jonbarron/jonbarron.github.io/">Jon Barron's minimalist template</a>.</p>
+              <p style="text-align:right;">
+              <small>&copy; 2026 Daniel Frey | Based on <a href="https://github.com/jonbarron/jonbarron.github.io/" style="font-size:inherit;">Jon Barron's minimalist template</a></small>
+              </p>
               </td>
             </tr>
           </tbody>
