@@ -90,10 +90,10 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 .talk-badge {
     display: inline-block;
-    margin-left: 8px;
-    padding: 1px 7px;
+    margin-left: 0px;
+    padding: 1px 4px;
 
-    font-size: 7.5pt;
+    font-size: 7pt;
     font-weight: 600;
     letter-spacing: 0.9px;
     text-transform: uppercase;
@@ -142,11 +142,12 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 }
 
 /* Ensure linked authors inherit exact same size/style */
-.talk-links a,
-.authors a {
-    font-size: inherit;
-    color: #0a66c2;
-    text-decoration: none;
+.talk-links {
+    margin-top: 0px;
+    margin-left: 0;
+    white-space: normal;
+    font-size: 7pt;
+    vertical-align: middle;;
 }
 
 .talk-links a:hover,
@@ -162,7 +163,8 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 }
 
 .talk-links {
-    margin-left: 0px;
+    padding: 0px 6px;
+    margin-left: 2px;
     white-space: nowrap;
     display: inline-block;
     margin-bottom: 0px
@@ -182,7 +184,7 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 .talk-links a::before {
     content: "🔗";
-    margin-right: 1px;
+    margin-right: 2px;
     opacity: 0.5;;
 }
 
@@ -219,6 +221,7 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
     flex: 0 0 105px;
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 /* link wrapper */
@@ -229,10 +232,10 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 /* base image style */
 .talk-thumb img {
-    width: 90px;
+    width: 120px;
     height: auto;
     display: block;
-    <!--  border: 1px solid #e0e0e0;-->
+    border: 1px solid #e0e0e0;
     border-radius: 0;
     transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
@@ -296,10 +299,10 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 }
 
 .talk-thumb img {
-    width: 80px;
+    width: 150px;
     height: auto;
     display: block;
-    border: 1px solid #e0e0e0;
+    border: 2px solid #ffffff;
 }
 
 /* list next to thumbnail */
@@ -326,6 +329,40 @@ h3 {
     font-size: 10pt;
     font-weight: 500;
 }
+
+.talk-badges {
+    display: block;
+    margin-top: 0px;
+}
+
+.project-link {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 6px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.project-link a {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 999px;
+
+    background: #eef3ff;
+    border: 1px solid #d7e3ff;
+
+    color: #0a66c2;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 0.15s ease;
+}
+
+.project-link a:hover {
+    background: #dfeaff;
+    border-color: #bcd2ff;
+}
+
 </style>
 
 
@@ -345,17 +382,23 @@ h3 {
         </a>
     </div>
     <ul class="talk-list">
-        <li class="talk-item">
-            <a href="https://dcfrey.github.io/sonar" style="font-size:inherit;">SONAR Project Page</a> 
+        <li class="talk-item project-link">
+            <a href="https://dcfrey.github.io/sonar">
+                SONAR
+            </a>
         </li>
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
                     A Physics-guided Implicit Neural Representation for Streak Reduction in X-ray Dark-field CT
-                    <span class="talk-badge oral">Oral</span><span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                </div>
+                <div class="talk-badges">
+                    <span class="talk-badge oral">Oral</span>
+                    <span class="talk-badge">Poster</span>
+                    <div class="talk-links">
                         <a class="badge" href="assets/SAIMI2026_PhysicsINR.pdf">Paper</a>
-                    </span>
+                        <a class="badge" href="assets/SAIMI2026_PhysicsINR_Poster.pdf">Poster</a>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     SAIMI 2026, Bern, CH
@@ -370,11 +413,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     SONAR: A Physics-constrained Neural Representation for X-ray Dark-field CT
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/MIDL2026_SONAR.pdf">Paper</a>
                         <a class="badge" href="https://openreview.net/forum?id=a317VhxNvo&"">OpenReview</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     MIDL 2026, Taipei, TW
@@ -407,11 +452,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Robust Sparse-view Dark-field CT with 3D Gaussian Splatting
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Robust3DGS.pdf">Paper</a>
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Robust3DGS_Poster.pdf">Poster</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     IEEE ISBI 2026, London, UK
@@ -440,11 +487,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Adaptive Diffusion Priors on Pre-clinical CT Reconstruction
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/MIDL2026_AdaptiveDiffusionPriors.pdf">Paper</a>
     <!--                    <a class="badge" href="assets/MIDL2026_AdaptiveDiffusionPriors_Poster_TH.pdf">Poster</a>-->
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     MIDL 2026, Taipei, TW &nbsp|&nbsp Presented by <a href="https://my.linkedin.com/in/theresa-hiu-48699b213" class="author-italic">T. Hiu</a>
@@ -477,11 +526,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Streak-reduced Human-scale Dark-field CT with 3D Gaussian Splatting
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS.pdf">Paper</a>
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS_Poster_TD.pdf">Poster</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     IEEE ISBI 2026, London, UK
@@ -497,10 +548,12 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_CameraReady.pdf">Paper</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     CT Meeting 2026, Salt Lake City, US
@@ -516,10 +569,12 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/SAIMI2026_3DGS.pdf">Paper</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     SAIMI 2026, Bern, CH 
@@ -535,11 +590,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge oral">Oral</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
 <!--                        <a class="badge" href="assets/XNPIG2026_DFCT_3DGS.pdf">Paper</a>-->
 <!--                        <a class="badge" href="assets/XNPIG2026_DFCT_3DGS_Poster_TD.pdf">Poster</a>-->
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     XNPIG 2026, Munich, DE
@@ -570,11 +627,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Structured Loss Amplification for U-Net-based Human-scale Dark-field CT Streak Reduction
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_CameraReady.pdf">Paper</a>
 <!--                    <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_Poster.pdf">Poster</a>-->
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     CT Meeting 2026, Salt Lake City, US
@@ -590,11 +649,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     Structured Loss Amplification for U-Net-based Dark-field CT Noise and Streak Reduction
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/XNPIG2026_DFCT_SupervisedStreakRemoval.pdf">Paper</a>
 <!--                    <a class="badge" href="assets/XNPIG2026_DFCT_SupervisedStreakRemoval_Poster.pdf">Poster</a>-->
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     XNPIG 2026, Munich, DE
@@ -627,11 +688,13 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     X-ray Dark-field CT Radiomics for Lung Phantom Assessment
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge">Poster</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Radiomics.pdf">Paper</a>
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Radiomics_Poster_SD.pdf">Poster</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     IEEE ISBI 2026, London, UK &nbsp|&nbsp Presented by <a href="https://de.linkedin.com/in/sofia-demianova-2516a3209" class="author-italic">Sofia Demianova</a>
@@ -664,10 +727,12 @@ h3 {
             <div class="talk-content">
                 <div class="talk-title">
                     MultipleMS Spinal Cord MRI
+                </div>
+                <div class="talk-badges">
                     <span class="talk-badge oral">Oral</span>
-                    <span class="talk-links">
+                    <div class="talk-links">
                         <a class="badge" href="assets/ECTRIMS2024_MMS.pdf">Slides</a>
-                    </span>
+                    </div>
                 </div>
                 <div class="talk-meta">
                     ECTRIMS 2024, Kopenhagen, DK
