@@ -25,17 +25,18 @@
                 <p class="name" style="text-align:center;">Daniel Frey</p>
                 <br>
                 <p style="text-align:justify;">
-                    PhD candidate at Technical University of Munich (TUM)</a>, affiliated with the <a href="https://www.ph.nat.tum.de/en/e17/people/daniel-frey/">Chair of Biomedical Physics</a> and the <a href="https://www.bioengineering.tum.de/">Munich Institute of Biomedical Engineering</a>, in close collaboration with the <a href="https://kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine">Chair of AI in Healthcare and Medicine</a>. 
+                    PhD candidate at Technical University of Munich (TUM)</a>, affiliated with the <a href="https://www.ph.nat.tum.de/en/e17/people/daniel-frey/">Chair of Biomedical Physics</a> and the <a href="https://www.bioengineering.tum.de/">Munich Institute of Biomedical Engineering</a>, in collaboration with the <a href="https://kiinformatik.mri.tum.de/en/chair-artificial-intelligence-healthcare-and-medicine">Chair of AI in Healthcare and Medicine</a>. 
                 </p>
                 
                 <p style="text-align:justify;">
-                    My research focuses on advancing the clinical translation of <a href="https://doi.org/10.1073/pnas.2118799119">human-scale dark-field computed tomography</a> (DFCT), an X-ray modality based on small-angle scattering with strong potential for pulmonary imaging. 
-                    I develop methods for DFCT streak artifact reduction and image quality enhancement using (self)-supervised techniques and alternative image representations, aiming to bridge physics-based domain knowledge with modern machine learning. 
+                    My research focuses on the clinical translation of <a href="https://doi.org/10.1073/pnas.2118799119">human-scale dark-field computed tomography</a> (DFCT), an X-ray modality based on small-angle scattering with strong potential for improved lung diagnostics. 
+                    I am developing algorithms for image quality enhancement, integrating physical domain knowledge into modern machine learning, with a particular interest in continuous image representations. 
                 </p>
                 
                 <p style="text-align:justify;">
-I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was first introduced to dark-field imaging. I went on to complete the Biomedical Engineering and Medical Physics (BEMP) Master's program, which I finished with a thesis on the human-scale DFCT prototype. Alongside my studies, I gained practical engineering experience at the TÜV SÜD electrical safety department, and developed expertise in deep learning workflows for neuroimaging as part of the <a href="https://neurologie.mri.tum.de/de/forschung/morphometrie">Morphometry Group</a> at TUM University Hospital.
-</p>
+                    I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I also went on to complete the Biomedical Engineering and Medical Physics (BEMP) Master's program. 
+                    Alongside my studies, I worked at the TÜV SÜD electrical safety department and Morphometry Group at TUM University Hospital, collecting both practical skills and experience in deep learning workflows.
+                </p>
                 
               </td>
               
@@ -63,6 +64,11 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
                       <img src="images/icon_github.png" width="18" height="18" alt="GitHub"
                            style="vertical-align: middle; margin-right: 4px;">
                     </a>
+                    
+                    <a href="https://openreview.net/profile?id=%7EDaniel_Frey1">
+                        <img src="images/icon_or.png" width="18" height="18" alt="OpenReview"
+                           style="vertical-align: middle; margin-right: 4px;">
+                    </a>
                   </p>
                 </div>
                 </figcaption>
@@ -81,11 +87,7 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 .talks-section {
     width: 97.5%;
     margin: auto;
-}
-
-.talks-section h3 {
-    margin-bottom: 4px;
-    letter-spacing: 0.4px;
+    line-height: 1.1;
 }
 
 .talk-list {
@@ -95,57 +97,38 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 .talk-item {
     padding: 8px 0;
-    line-height: 1.1;
 }
 
 .talk-title {
-    font-weight: 600;
     color: #111;
-    font-size: 10pt;
+    font-size: 9pt;
+    font-weight: 400;
+    margin-top: 0px;
+    
 }
 
 .talk-badge {
     display: inline-block;
-    margin-left: 0px;
-    padding: 1px 2px;
+    padding: 0px 2px;
+
+    border: none;
+    border-radius: 0;
+
+    background: transparent;
 
     font-size: 7pt;
-    font-weight: 600;
-    letter-spacing: 0.6px;
+    font-weight: 800;
+    letter-spacing: 0.05px;
     text-transform: uppercase;
-
-    border-radius: 1px;
-
-    background: #fff9db;   /* light yellow */
-    border: 1px solid #d9d9d9; /* light gray box */
-    color: #666;
-
-    vertical-align: middle;
+    margin-bottom: 2px;
 }
 
-/* neutral-specific badge */
-.talk-badge.neutral {
-    background: #f9f9f9;
-    border: 1px solid #d8b1ab;
-    color: #777;
-}
-
-/* oral-specific badge */
 .talk-badge.oral {
-    background: #f7e6e3;
-    border: 1px solid #d8b1ab;
-    color: #9a4f46;
+    color: #de7f7c;
 }
 
-.talk-badge a {
-    display: inline-block;
-    font-size: 6pt;
-    padding: 0px 0px;
-    margin-left: 0px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-    vertical-align: middle;
+.talk-badge.poster {
+    color: #f2cf83;
 }
 
 .talk-meta, 
@@ -153,7 +136,6 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 .authors,
 .description {
     font-size: 9pt;
-    color: #444;
 }
 
 .description {
@@ -161,54 +143,79 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 }
 
 .authors {
-    font-style: italic
+    font-style: italic;
+    color: #888;
 }
+/* ========================================
+   Resource links
+======================================== */
 
-/* Ensure linked authors inherit exact same size/style */
 .talk-links {
-    margin-top: 0px;
-    margin-left: 0;
-    white-space: normal;
-    font-size: 8pt;
-    vertical-align: middle;;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 4px 0 0;
+    padding: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
-.talk-links a:hover,
-.authors a:hover {
-    text-decoration: underline;
+.talk-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 4px;
+    border: 1px solid #d9e4f5;
+    border-radius: 10px;
+
+    background: #f5f8fc;
+    color: #1769aa;
+
+    font-size: 7pt;
+    font-weight: 300;
+    line-height: 1.1;
+    text-decoration: none;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
 }
+
+.talk-links a:hover {
+    background: #e8f0fb;
+    border-color: #b8cde8;
+    color: #0b5791;
+    text-decoration: none;
+}
+
+/* Small external-link indicator */
+.talk-links a::after {
+    content: "↗";
+    margin-left: 4px;
+    font-size: 0.9em;
+    opacity: 0.65;
+}
+
+
+/* Author links stay visually subtle */
+.authors a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted #aaa;
+}
+
+.authors a:hover {
+    color: #1769aa;
+    border-bottom-color: #1769aa;
+}
+
+/* Footnote */
 
 .footnote {
     margin-top: 8px;
     text-align: right;
     font-size: 9pt;
     color: #777;
-}
-
-.talk-links {
-    padding: 0px 6px;
-    margin-left: 0px;
-    white-space: nowrap;
-    display: inline-block;
-    margin-bottom: 0px
-}
-
-.talk-links a {
-    display: inline-block;
-    font-size: 8pt;
-    padding: 2px 6px;
-    margin-left: 0px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-    vertical-align: middle;
-    transition: all 0.15s ease;
-}
-
-.talk-links a::before {
-    content: "🔗";
-    margin-right: 2px;
-    opacity: 0.75;;
 }
 
 /* Conference */
@@ -234,17 +241,17 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 .talk-item {
     display: flex;
-    padding: 8px 0;
+    padding: 8px 4px;
     border-bottom: 0px solid #ececec;
     align-items: flex-start;
 }
 
 /* thumbnail container */
 .talk-thumb {
-    flex: 0 0 105px;
+    flex: 0 0 10px;
     display: flex;
-    align-items: center;
-    margin-right: 10px;
+    align-items: top;
+    margin: 4px;
 }
 
 /* link wrapper */
@@ -255,7 +262,6 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 /* base image style */
 .talk-thumb img {
-    width: 120px;
     height: auto;
     display: block;
     border: 1px solid #e0e0e0;
@@ -316,16 +322,15 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
 
 /* sticky shared thumbnail */
 .talk-thumb {
-    flex: 0 0 100px;
     position: sticky;
     top: 12px; /* optional nice scroll effect */
 }
 
 .talk-thumb img {
-    width: 100px;
+    width: 40px;
     height: auto;
     display: block;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
 /* list next to thumbnail */
@@ -334,21 +339,22 @@ I hold Bachelor's degrees in Biochemistry and Physics from TUM, where I was firs
     padding: 0;
     margin: 0;
     flex: 1;
+<!--    border-bottom: 1px solid #ccc;-->
 }
 
 .talk-item {
-    padding: 4px 0;
+    padding: 4px 8px;
     border-bottom: 1px solid #eee;
 }
 
 h2 {
-    margin-top: 24px;
-    margin-bottom: 6px;
-    font-size: 13pt;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    font-size: 11pt;
 }
 h3 {
-    margin-top: 12px;
-    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-bottom: 2px;
     font-size: 10pt;
     font-weight: 500;
 }
@@ -395,423 +401,295 @@ h3 {
 
 
 
-<div style="height: 12px;"></div>
-<h2>Human-scale Dark-field Computed Tomography (DFCT)</h2>
+<h1>Conferences</h1>
 
-<h3>Overview</h3>
+<!--<h2>01/2027: Northern Lights Deep Learning Conference (NLDL), Tromsø, Norway</h2>-->
+<!--<div class="talk-group">-->
+<!--    <ul class="talk-list">-->
+<!--        <li class="talk-item">-->
+<!--            <div class="talk-content">-->
+<!--                <span class="talk-badge poster">Poster Presentation</span>-->
+<!--                <div class="talk-title">-->
+<!--                    "Dark-field CT Super-resolution Using Grid-anchored Gaussian Primitives"-->
+<!--                </div>-->
+<!--                <div class="authors">-->
+<!--                    <a href="https://www.linkedin.com/in/hongyi-gao-tum/" class="author-italic">H. Gao</a>*, <b>D. Frey</b>*, -->
+<!--                    Y. Sun, T. Dorosti, J. B. Thalhammer, Z. Huang, T. Hiu, A. Kallala, S. Demianova, J. McGinnis, D. Rueckert, F. Pfeiffer, F. Schaff-->
+<!--                </div>-->
+<!--                <div class="talk-badges">-->
+<!--                    <div class="talk-links">-->
+<!--                        <a class="badge" href="assets/NLDL2027_DFCT_SuperResolution.pdf">Abstract</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+<h2>07/2026: Medical Imaging with Deep Learning (MIDL), Taipei, Taiwan</h2>
 <div class="talk-group">
-    <div class="talk-thumb">
-        <a href="assets/XNPIG2026_InvitedTalk_ClinicalDFCT.pdf" class="thumb-hover">
-            <img class="img-base" src="assets/XNPIG2026_InvitedTalk_thumb1.png">
-            <img class="img-hover" src="assets/XNPIG2026_InvitedTalk_thumb2.png">
-        </a>
-    </div>
     <ul class="talk-list">
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    Clinical Dark-field Computed Tomography: From Prototype to Patient
+                    "SONAR: A Physics-constrained Neural Representation for X-ray Dark-field CT"
+                    <span class="talk-badge oral">Poster Pitch Talk (2nd Place)</span> + 
+                    <span class="talk-badge poster">Poster Presentation</span>
+                </div>
+                <div class="authors">
+                    <b>D. Frey</b>*, T. Hiu*,
+                    J. McGinnis, T. Dorosti, J. B. Thalhammer, S. Peterhansl, Z. Huang, F. Pfeiffer, D. Rueckert, F. Schaff
                 </div>
                 <div class="talk-badges">
-                    <span class="talk-badge oral">Oral (Invited Talk)</span>
                     <div class="talk-links">
-                        <a class="badge" href="assets/XNPIG2026_InvitedTalk_ClinicalDFCT.pdf">Slides</a>
+                        <a href="https://dcfrey.github.io/sonar">Project Page</a>
+                        <a class="badge" href="assets/MIDL2026_SONAR_Poster_Pitch.pdf"">Slides</a>
+                        <a class="badge" href="assets/MIDL2026_SONAR.pdf">Abstract</a>
+                        <a class="badge" href="assets/MIDL2026_SONAR_Poster_36x48.pdf"">Poster</a>
                     </div>
                 </div>
-                <div class="talk-meta">
-                    XNPIG 2026, Garching, DE
+            </div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-content">
+                <div class="talk-title">
+                    "Adaptive Diffusion Priors on Pre-clinical CT Reconstruction"
+                </div>
+                <div class="authors">
+                    <a href="https://my.linkedin.com/in/theresa-hiu-48699b213" class="author-italic">T. Hiu</a>*, <b>D. Frey</b>*, 
+                    T. Dorosti, J. B. Thalhammer, S. Peterhansl, Z. Huang, S. Zandarco, F. Pfeiffer, F. Schaff
+                </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a class="badge" href="assets/MIDL2026_AdaptiveDiffusionPriors.pdf">Abstract</a>
+                        <a class="badge" href="assets/MIDL2026_AdaptiveDiffusionPriors_Poster_TH.pdf">Poster</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<h2>06/2026: 7th International Conference on X-ray and Neutron Phase Imaging with Gratings (XNPIG), Garching, Germany</h2>
+<div class="talk-group">
+    <ul class="talk-list">
+        <li class="talk-item">
+            <div class="talk-content">
+                <div class="talk-title">
+                    "Clinical Dark-field Computed Tomography: From Prototype to Patient"
+                    <span class="talk-badge oral">Invited Talk</span>
                 </div>
                 <div class="authors">
                     <b>D. Frey</b>*, J. F. Hilmer*,
                     S. Demianova, L. Kayser, P. Bleuel, T. Hiu, T. Dorosti, J. B. Thalhammer, T. Koehler, F. Schaff, F. Pfeiffer
                 </div>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<h3>Lung Phantom Development</h3>
-<div class="talk-group">
-    <div class="talk-thumb">
-        <a href="assets/IEEE_ISBI2026_DFCT_Radiomics_Poster_SD.pdf">
-            <img src="assets/IEEE_ISBI2026_DFCT_Radiomics_thumb.png">
-        </a>
-    </div>
-    <ul class="talk-list">
-        <li class="talk-item">
-            <div class="talk-content">
-                <div class="talk-title">
-                    X-ray Dark-field CT Radiomics for Lung Phantom Assessment
-                </div>
                 <div class="talk-badges">
-                    <span class="talk-badge neutral">Poster</span>
                     <div class="talk-links">
-                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Radiomics.pdf">Paper</a>
-                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Radiomics_Poster_SD.pdf">Poster</a>
+                        <a class="badge" href="assets/XNPIG2026_InvitedTalk_ClinicalDFCT.pdf">Slides</a>
                     </div>
                 </div>
-                <div class="talk-meta">
-                    IEEE ISBI 2026, London, UK &nbsp|&nbsp Presented by <a href="https://de.linkedin.com/in/sofia-demianova-2516a3209" class="author-italic">S. Demianova</a>
-                </div>
-                <div class="authors">
-                    S. Demianova*, <b>D. Frey</b>*,
-                    P. Bleuel, J. F. Hilmer, L. Kayser, D. Pfeiffer, T. Koehler, F. Pfeiffer
-                </div>
             </div>
-        </li>
-        <div class="description">
-            We demonstrate that dark-field CT radiomic texture features support the characterization of lung phantoms.
-        </div>
-    </ul>
-</div>
-
-
-
-<div style="height: 12px;"></div>
-<h2>X-ray Phase Retrieval</h2>
-
-<h3>Physics-guided Representations</h3>
-<div class="talk-group">
-    <div class="talk-thumb">
-        <a href="https://dcfrey.github.io/sonar" class="thumb-hover">
-            <img class="img-base" src="assets/MIDL2026_SONAR_thumb1.png">
-            <img class="img-hover" src="assets/MIDL2026_SONAR_thumb2.png">
-        </a>
-    </div>
-    <ul class="talk-list">
-                <li class="talk-item project-link">
-            <a href="https://dcfrey.github.io/sonar">
-                SONAR Project Page
-            </a>
         </li>
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    A Physics-guided Implicit Neural Representation for Streak Reduction in X-ray Dark-field CT
+                    "Structured Loss Amplification for U-Net-based Dark-field CT Noise and Streak Reduction"
+                    <span class="talk-badge poster">Poster Presentation</span>
+                </div>
+                 <div class="authors">
+                    <b>D. Frey</b>*, T. Dorosti*,
+                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, T. Hiu, S. Peterhansl, J. McGinnis, T. Koehler, D. Pfeiffer, F. Pfeiffer, D. Rueckert, F. Schaff
                 </div>
                 <div class="talk-badges">
-                    <span class="talk-badge oral">Oral (Lightning Talk)</span>
-                    <span class="talk-badge">Poster</span>
                     <div class="talk-links">
-                        <a class="badge" href="assets/SAIMI2026_PhysicsINR.pdf">Paper</a>
-                        <a class="badge" href="assets/SAIMI2026_PhysicsINR_Poster.pdf">Poster</a>
+                        <a class="badge" href="assets/XNPIG2026_DFCT_SupervisedStreakRemoval.pdf">Abstract</a>
+                        <a class="badge" href="assets/XNPIG2026_DFCT_SupervisedStreakRemoval_Poster.pdf">Poster</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-content">
+                <div class="talk-title">
+                    "Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting"
+                </div>
+                <div class="authors">
+                    <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" class="author-italic">T. Dorosti</a>*, <b>D. Frey</b>*,
+                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
+                </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a class="badge" href="assets/XNPIG2026_DFCT_3DGS_Talk_TD.pdf">Slides</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<h2>06/2026: Symposium on Artificial Intelligence in Medical Imaging (SAIMI), Bern, Switzerland</h2>
+<div class="talk-group">
+    <ul class="talk-list">
+        <li class="talk-item">
+            <div class="talk-content">
+                <div class="talk-title">
+                    "A Physics-guided Implicit Neural Representation for Streak Reduction in X-ray Dark-field CT"
+                    <span class="talk-badge oral">Lightning Talk</span> +
+                    <span class="talk-badge poster">Poster Presentation</span>
+                </div>
+                <div class="authors">
+                    <b>D. Frey</b>*, T. Hiu*,
+                    J. McGinnis, T. Dorosti, J. B. Thalhammer, S. Peterhansl, Z. Huang, F. Pfeiffer, D. Rueckert, F. Schaff
+                </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a href="https://dcfrey.github.io/sonar">Project Page</a>
                         <a class="badge" href="assets/SAIMI2026_PhysicsINR_LightningTalk.pdf">Slides</a>
+                        <a class="badge" href="assets/SAIMI2026_PhysicsINR.pdf">Abstract</a>
+                        <a class="badge" href="assets/SAIMI2026_PhysicsINR_Poster.pdf">Poster</a>
                     </div>
-                </div>
-                <div class="talk-meta">
-                    SAIMI 2026, Bern, CH
-                </div>
-                <div class="authors">
-                    <b>D. Frey</b>*, T. Hiu*,
-                    J. McGinnis, T. Dorosti, J. B. Thalhammer, S. Peterhansl, Z. Huang, F. Pfeiffer, D. Rueckert, F. Schaff
                 </div>
             </div>
         </li>
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    SONAR: A Physics-constrained Neural Representation for X-ray Dark-field CT
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge oral">Oral (2nd Place Poster Pitch)</span>
-                    <span class="talk-badge">Poster</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/MIDL2026_SONAR.pdf">Paper</a>
-                        <a class="badge" href="https://openreview.net/forum?id=a317VhxNvo&"">OpenReview</a>
-                        <a class="badge" href="assets/MIDL2026_SONAR_Poster_Pitch.pdf"">Slides</a>
-                        <a class="badge" href="assets/MIDL2026_SONAR_Poster_36x48.pdf"">Poster</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    MIDL 2026, Taipei, TW
+                    "Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting"
+                    <span class="talk-badge poster">Poster Presentation</span>
                 </div>
                 <div class="authors">
-                    <b>D. Frey</b>*, T. Hiu*,
-                    J. McGinnis, T. Dorosti, J. B. Thalhammer, S. Peterhansl, Z. Huang, F. Pfeiffer, D. Rueckert, F. Schaff
+                    <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" class="author-italic">T. Dorosti</a>*, <b>D. Frey</b>*,
+                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
+                </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a class="badge" href="assets/SAIMI2026_3DGS.pdf">Abstract</a>
+                        <a class="badge" href="assets/SAIMI2026_3DGS_Poster_TD.pdf">Poster</a>
+                    </div>
                 </div>
             </div>
         </li>
-        <div class="description">
-            We propose SONAR, a trimodal INR constrained by Talbot–Lau interferometer physics for enhanced DFCT reconstruction. 
-        </div>
     </ul>
 </div>
 
-
-
-<div style="height: 12px;"></div>
-<h2>Tomographic Reconstruction</h2>
-
-<h3>3D Gaussian Splatting</h3>
+<h2>06/2026: 9th International Conference on Image Formation in X-Ray Computed Tomography (CT Meeting), Salt Lake City, United States of America</h2>
 <div class="talk-group">
-    <div class="talk-thumb">
-        <a href="assets/IEEE_ISBI2026_DFCT_Robust3DGS_Poster.pdf">
-            <img src="assets/IEEE_ISBI2026_DFCT_Robust3DGS_thumb.png">
-        </a>
-    </div>
     <ul class="talk-list">
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    Robust Sparse-view Dark-field CT with 3D Gaussian Splatting
+                    "Structured Loss Amplification for U-Net-based Human-scale Dark-field CT Streak Reduction"
+                </div>
+                <div class="authors">
+                    <b>D. Frey</b>*, T. Dorosti*,
+                    <a href="https://de.linkedin.com/in/johannes-thalhammer-72657922b" class="author-italic">J. B. Thalhammer</a>, J. F. Hilmer, P. Bleuel, T. Hiu, S. Peterhansl, J. McGinnis, T. Koehler, D. Pfeiffer, F. Pfeiffer, D. Rueckert, F. Schaff
                 </div>
                 <div class="talk-badges">
-                    <span class="talk-badge">Poster</span>
                     <div class="talk-links">
-                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Robust3DGS.pdf">Paper</a>
-                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Robust3DGS_Poster.pdf">Poster</a>
+                        <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_CameraReady.pdf">Abstract</a>
+                        <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_Poster.pdf">Poster</a>
+                        <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_Teaser.pptx">Teaser</a>
                     </div>
                 </div>
-                <div class="talk-meta">
-                    IEEE ISBI 2026, London, UK
+            </div>
+        </li>
+        <li class="talk-item">
+            <div class="talk-content">
+                <div class="talk-title">
+                    "Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting"
+                </div>
+                <div class="authors">
+                    <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" class="author-italic">T. Dorosti</a>*, <b>D. Frey</b>*,
+                    <a href="https://de.linkedin.com/in/johannes-thalhammer-72657922b" class="author-italic">J. B. Thalhammer</a>, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
+                </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_CameraReady.pdf">Abstract</a>
+                        <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_Poster_TD.pdf">Poster</a>
+                        <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_Teaser_TD.pptx">Teaser</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+<h2>04/2026: IEEE International Symposium on Biomedical Imaging (ISBI), London, United Kingdom</h2>
+<div class="talk-group">
+    <ul class="talk-list">
+         <li class="talk-item">
+            <div class="talk-content">
+                <div class="talk-title">
+                    "Robust Sparse-view Dark-field CT with 3D Gaussian Splatting"
+                    <span class="talk-badge poster">Poster Presentation</span>
                 </div>
                 <div class="authors">
                     <b>D. Frey</b>*, T. Dorosti*,
                     J. McGinnis, T. Hiu, F. I. Ozlugedik, J. B. Thalhammer, S. Peterhansl, D. Rueckert, F. Pfeiffer, F. Schaff
                 </div>
-            </div>
-        </li>
-        <div class="description">
-            We improve sparse-view dark-field CT reconstruction quality via 3D Gaussian splatting compared to FDK.
-        </div>
-    </ul>
-</div>
-
-<h3>Diffusion Posterior Sampling</h3>
-<div class="talk-group">
-    <div class="talk-thumb">
-        <a href="https://openreview.net/forum?id=vQMgNm8lFc&">
-            <img src="assets/MIDL2026_AdaptiveDiffusionPriors_thumb.png">
-        </a>
-    </div>
-    <ul class="talk-list">
-        <li class="talk-item">
-            <div class="talk-content">
-                <div class="talk-title">
-                    Adaptive Diffusion Priors on Pre-clinical CT Reconstruction
-                </div>
                 <div class="talk-badges">
-                    <span class="talk-badge neutral">Poster</span>
                     <div class="talk-links">
-                        <a class="badge" href="assets/MIDL2026_AdaptiveDiffusionPriors.pdf">Paper</a>
-                        <a class="badge" href="assets/MIDL2026_AdaptiveDiffusionPriors_Poster_TH.pdf">Poster</a>
+                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Robust3DGS.pdf">Abstract</a>
+                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Robust3DGS_Poster.pdf">Poster</a>
                     </div>
                 </div>
-                <div class="talk-meta">
-                    MIDL 2026, Taipei, TW &nbsp|&nbsp Presented by <a href="https://my.linkedin.com/in/theresa-hiu-48699b213" class="author-italic">T. Hiu</a>
-                </div>
-                <div class="authors">
-                    T. Hiu*, <b>D. Frey</b>*, T. Dorosti, J. B. Thalhammer, S. Peterhansl, Z. Huang, S. Zandarco, F. Pfeiffer, F. Schaff
-                </div>
             </div>
         </li>
-        <div class="description">
-            We explore diffusion-based reconstruction with physics consistency and LoRA adaptation for dark-field CT under severe undersampling.
-        </div>
-    </ul>
-</div>
-
-
-
-<div style="height: 12px;"></div>
-<h2>Post-processing</h2>
-
-<h3>3D Gaussian Splatting</h3>
-<div class="talk-group">
-    <div class="talk-thumb">
-        <a href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS_Poster_TD.pdf" class="thumb-hover">
-            <img src="assets/IEEE_ISBI2026_DFCT_Clinical3DGS_thumb.png">
-        </a>
-    </div>
-    <ul class="talk-list">
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    Streak-reduced Human-scale Dark-field CT with 3D Gaussian Splatting
+                    "Streak-reduced Human-scale Dark-field CT with 3D Gaussian Splatting"
+                </div>
+                <div class="authors">
+                    <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" class="author-italic">T. Dorosti</a>*, <b>D. Frey</b>*,
+                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
                 </div>
                 <div class="talk-badges">
-                    <span class="talk-badge neutral">Poster</span>
                     <div class="talk-links">
-                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS.pdf">Paper</a>
+                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS.pdf">Abstract</a>
                         <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Clinical3DGS_Poster_TD.pdf">Poster</a>
                     </div>
                 </div>
-                <div class="talk-meta">
-                    IEEE ISBI 2026, London, UK
-                    &nbsp|&nbsp Presented by <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" class="author-italic">T. Dorosti</a>
-                </div>
-                <div class="authors">
-                    T. Dorosti*, <b>D. Frey</b>*,
-                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
-                </div>
             </div>
         </li>
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge neutral">Poster</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_CameraReady.pdf">Paper</a>
-                        <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_Poster_TD.pdf">Poster</a>
-                        <a class="badge" href="assets/CTMeeting2026_DFCT_Clinical3DGS_Teaser_TD.pptx">Teaser</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    CT Meeting 2026, Salt Lake City, US
-                    &nbsp|&nbsp Presented by <a href="https://de.linkedin.com/in/johannes-thalhammer-72657922b" class="author-italic">J. B. Thalhammer</a>
+                    "X-ray Dark-field CT Radiomics for Lung Phantom Assessment"
                 </div>
                 <div class="authors">
-                    T. Dorosti*, <b>D. Frey</b>*,
-                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
+                    <a href="https://de.linkedin.com/in/sofia-demianova-2516a3209" class="author-italic">S. Demianova</a>*, <b>D. Frey</b>*,
+                    P. Bleuel, J. F. Hilmer, L. Kayser, D. Pfeiffer, T. Koehler, F. Pfeiffer
+                </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Radiomics.pdf">Abstract</a>
+                        <a class="badge" href="assets/IEEE_ISBI2026_DFCT_Radiomics_Poster_SD.pdf">Poster</a>
+                    </div>
                 </div>
             </div>
         </li>
-        <li class="talk-item">
-            <div class="talk-content">
-                <div class="talk-title">
-                    Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge">Poster</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/SAIMI2026_3DGS.pdf">Paper</a>
-                        <a class="badge" href="assets/SAIMI2026_3DGS_Poster_TD.pdf">Poster</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    SAIMI 2026, Bern, CH 
-                </div>
-                <div class="authors">
-                    T. Dorosti*, <b>D. Frey</b>*,
-                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
-                </div>
-            </div>
-        </li>
-        <li class="talk-item">
-            <div class="talk-content">
-                <div class="talk-title">
-                    Streak Artifact Reduction in Human-scale Dark-field CT Using 3D Gaussian Splatting
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge neutral">Oral</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/XNPIG2026_DFCT_3DGS_Talk_TD.pdf">Slides</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    XNPIG 2026, Garching, DE
-                    &nbsp|&nbsp Presented by <a href="https://scholar.google.com/citations?user=T11HeHYAAAAJ&hl=en" class="author-italic">T. Dorosti</a>
-                </div>
-                <div class="authors">
-                    T. Dorosti*, <b>D. Frey</b>*,
-                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, S. Peterhansl, J. McGinnis, D. Rueckert, D. Pfeiffer, F. Pfeiffer, F. Schaff
-                </div>
-            </div>
-        </li>
-        <div class="description">
-            We repurpose 3D Gaussian splatting as streak artifact filter for reconstructed human-scale dark-field CT volumes.
-        </div>
     </ul>
 </div>
 
-<h3>Convolutional Neural Networks</h3>
+<h2>09/2024: European Committee for Treatment and Research in Multiple Sclerosis (ECTRIMS), Copenhagen, Denmark</h2>
 <div class="talk-group">
-    <div class="talk-thumb">
-        <a href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_CameraReady.pdf" class="thumb-hover">
-            <img class="img-base" src="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_thumb1.png">
-            <img class="img-hover" src="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_thumb2.png">
-        </a>
-    </div>
     <ul class="talk-list">
         <li class="talk-item">
             <div class="talk-content">
                 <div class="talk-title">
-                    Structured Loss Amplification for U-Net-based Human-scale Dark-field CT Streak Reduction
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge">Poster</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_CameraReady.pdf">Paper</a>
-                        <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_Poster.pdf">Poster</a>
-                        <a class="badge" href="assets/CTMeeting2026_DFCT_SupervisedStreakRemoval_Teaser.pptx">Teaser</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    CT Meeting 2026, Salt Lake City, US
-                    &nbsp|&nbsp Presented by <a href="https://de.linkedin.com/in/johannes-thalhammer-72657922b" class="author-italic">J. B. Thalhammer</a>
-                </div>
-                <div class="authors">
-                    <b>D. Frey</b>*, T. Dorosti*,
-                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, T. Hiu, S. Peterhansl, J. McGinnis, T. Koehler, D. Pfeiffer, F. Pfeiffer, D. Rueckert, F. Schaff
-                </div>
-            </div>
-        </li>
-        <li class="talk-item">
-            <div class="talk-content">
-                <div class="talk-title">
-                    Structured Loss Amplification for U-Net-based Dark-field CT Noise and Streak Reduction
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge">Poster</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/XNPIG2026_DFCT_SupervisedStreakRemoval.pdf">Paper</a>
-                        <a class="badge" href="assets/XNPIG2026_DFCT_SupervisedStreakRemoval_Poster.pdf">Poster</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    XNPIG 2026, Garching, DE
-                </div>
-                <div class="authors">
-                    <b>D. Frey</b>*, T. Dorosti*,
-                    J. B. Thalhammer, J. F. Hilmer, P. Bleuel, T. Hiu, S. Peterhansl, J. McGinnis, T. Koehler, D. Pfeiffer, F. Pfeiffer, D. Rueckert, F. Schaff
-                </div>
-            </div>
-        </li>
-        <div class="description">
-            We introduce a structured loss formulation for U-Net-based streak reduction in human-scale dark-field CT using spatial and frequency-aware modulations.
-        </div>
-    </ul>
-</div>
-
-
-
-<div style="height: 12px;"></div>
-<h2>Other Projects</h2>
-
-<h3>Neuroimaging</h3>
-<div class="talk-group">
-    <div class="talk-thumb">
-        <a href="assets/ECTRIMS2024_MMS.pdf">
-            <img src="assets/ECTRIMS2024_MMS_thumb.png">
-        </a>
-    </div>
-    <ul class="talk-list">
-        <li class="talk-item">
-            <div class="talk-content">
-                <div class="talk-title">
-                    MultipleMS Spinal Cord MRI
-                </div>
-                <div class="talk-badges">
-                    <span class="talk-badge oral">Oral</span>
-                    <div class="talk-links">
-                        <a class="badge" href="assets/ECTRIMS2024_MMS.pdf">Slides</a>
-                    </div>
-                </div>
-                <div class="talk-meta">
-                    ECTRIMS 2024, Kopenhagen, DK
+                    "MMS Status Update: Spinal Cord MRI"
+                    <span class="talk-badge oral">Short Talk</span>
                 </div>
                 <div class="authors">
                     <b>D. Frey</b>, 
                     J. McGinnis, M. Mühlau
                 </div>
+                <div class="talk-badges">
+                    <div class="talk-links">
+                        <a class="badge" href="assets/ECTRIMS2024_MMS.pdf">Slides</a>
+                    </div>
+                </div>
             </div>
         </li>
-        <div class="description">
-            Status update on MultipleMS, a multi-center longitudinal cohort study for spinal cord lesion analysis in MS.
-        </div>
     </ul>
 </div>
 
@@ -825,8 +703,11 @@ h3 {
 
 
 <!----------------------------------------------------------------------------->
-<!--PAPERS-->
+<!--FULL PAPERS-->
 <!----------------------------------------------------------------------------->
+
+<!--<div style="height: 18px;"></div>-->
+<!--<h1>Selected Publications</h1>-->
 
 <!--<hr style="border: none; height: 1px; background-color: #A3A3A3; width: 97%; margin: 3px auto;">-->
 
