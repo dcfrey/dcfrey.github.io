@@ -406,13 +406,88 @@ h3 {
     border-color: #bcd2ff;
 }
 
+/* ========================================
+   Tools
+======================================== */
+
+.tool-item {
+    padding: 10px 4px 18px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.tool-content h3 {
+    margin: 0 0 5px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.tool-content h3 a {
+    color: #1769aa;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.tool-content h3 a:hover {
+    color: #0b5791;
+}
+
+.tool-arrow {
+    font-size: 0.85em;
+    opacity: 0.65;
+}
+
+.tool-description {
+    margin: 4px 0 8px;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Video preview */
+
+.tool-preview {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 2px auto 0;
+    line-height: 0;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background: #f7f8fa;
+    margin-left: 0px;
+}
+
+.tool-preview video {
+    display: block;
+    width: 98%;
+    height: auto;
+    transition: opacity 0.2s ease;
+    margin: 6px;
+}
+
+.tool-preview:hover video {
+    opacity: 0.92;
+}
+
+
+
+
 </style>
+
+
 
 
 
 <div class="talks-section">
 
 
+
+
+
+
+<!-- CONFERENCES -->
 
 <h1>Conferences</h1>
 
@@ -736,9 +811,68 @@ h3 {
 <!--          </tbody>-->
 <!--        </table>-->
 
+
+
+
+
+
+<!-- TOOLS -->
+
+<h1>Tools</h1>
+
+<div class="tool-item">
+    <div class="tool-content">
+        <h3>
+            <a href="https://github.com/dcfrey/numviewer"
+               target="_blank"
+               rel="noopener noreferrer">
+                NumViewer <span class="tool-arrow">↗</span>
+            </a>
+        </h3>
+
+        <p class="tool-description">
+            An interactive, lightweight viewer for exploring and visualizing NumPy arrays directly from .npy and .npz files. 
+            Quickly inspect array shapes, dimensions, and values through an intuitive interface. 
+        </p>
+
+<!--        <div class="talk-links">-->
+<!--            <a href="https://github.com/dcfrey/numviewer"-->
+<!--               target="_blank"-->
+<!--               rel="noopener noreferrer">-->
+<!--                GitHub Repository-->
+<!--            </a>-->
+<!--        </div>-->
+    </div>
+
+    <a class="tool-preview"
+       href="videos/numviewer_demo.mp4"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Explore NumViewer on GitHub">
+
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="NumViewer demonstration">
+            <source src="videos/numviewer_demo.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </a>
+</div>
+
+
+
+
+
+
 <!----------------------------------------------------------------------------->
 <!--FOOTNOTES-->
 <!----------------------------------------------------------------------------->
+
+<br>
 
         <table style="width:100%;border:0;border-spacing:0;margin:auto;">
           <tbody>
